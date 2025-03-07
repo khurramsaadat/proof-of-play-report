@@ -1,150 +1,162 @@
 # Proof of Play Report Form
 
 ## Project Overview
-A web-based form for creating and managing Proof of Play reports, featuring a responsive design that works both on screen and in print.
+A web-based form application for creating and managing Proof of Play reports. The application features a responsive design that works seamlessly both on screen and in print, with modern UI elements and intuitive user interactions.
+
+## Deployment
+- **GitHub Repository**: Public repository for version control and code sharing
+- **Netlify Deployment**: Automated deployment through GitHub integration
+  - Auto-deploys on every push to the master branch
+  - Continuous Integration/Continuous Deployment (CI/CD) enabled
+
+## Technology Stack
+- HTML5
+- CSS3 (Modern CSS features)
+- Vanilla JavaScript (ES6+)
+- External Libraries:
+  - html2pdf.js for PDF generation
+  - Font Awesome for icons
 
 ## File Structure
-- `index.html` - Main HTML structure
-- `style.css` - All styling and responsive design rules
-- `script.js` - JavaScript functionality
-- Assets:
-  - `logo.png` - Header logo
-  - `shape.png` - Header shape image
-  - `footer.png` - Footer image
+```
+proof-of-play-report/
+├── index.html          # Main HTML structure
+├── style.css          # Styling and responsive design
+├── script.js          # Core functionality
+└── assets/
+    ├── logo.png       # Header logo
+    ├── shape.png      # Header shape
+    └── footer.png     # Footer image
+```
 
 ## Key Features
 
-### 1. Header Section
-- Logo (40px height) positioned on the left
-- Shape image (160px height) positioned on the right
-- Responsive design for mobile views
+### 1. Form Header
+- Professional layout with logo and shape image
+- Responsive design adapting to different screen sizes
+- Optimized image sizing (logo: 40px, shape: 160px)
 
 ### 2. Form Fields
-- Reference Number (Default PM1046-2025.01)
-- Client Information (Default: Philip Morris Management Services Middle East Ltd)
-- Contact Person (Default: Noor Sumaiya)
-- Position (Default: Commercial Planning Administrator Lead)
-- Date (Auto-populated with current date)
+- Auto-populated default values:
+  - Reference Number: PM1046-2025.01
+  - Client: Philip Morris Management Services Middle East Ltd
+  - Contact: Noor Sumaiya
+  - Position: Commercial Planning Administrator Lead
+  - Date: Automatically set to current date
 
 ### 3. Location Management
-- Pre-populated list of locations with increased vertical spacing
-- Alternating background colors for better readability
-- Numbering format: 01, 02, 03, etc.
-- Add/Remove location functionality
-- Commit changes feature
-- Note section with date for special locations
+- Dynamic location list with:
+  - Pre-populated locations
+  - Add/Remove functionality
+  - Commit changes feature
+  - Automatic numbering (01, 02, etc.)
+  - Enhanced spacing for readability
+  - Alternating background colors
+  - Interactive hover effects
 
-### 4. Proof of Play Section
-- Image upload functionality with modern UI
-- Location selection for each image
-- Support for multiple images
-- Automatic sizing (small/large) based on image dimensions
-- Responsive image preview
-- Enhanced image management:
-  - Red circular delete button in top-right corner
-  - Improved image removal UX
-  - Clear visual feedback for delete actions
+### 4. Image Management
+- Modern upload interface
+- Multiple image support
+- Location association for each image
+- Automatic image sizing
+- Enhanced delete functionality:
+  - Red circular delete button
+  - Positioned top-right
+  - Hover effects
+  - Touch-friendly (40px target)
 
 ### 5. Service Engineer Section
-- Engineer details (Name: Hazem Shbair)
-- Signature upload with transformation controls
-- Date field
+- Pre-filled engineer details
+- Digital signature support:
+  - Drag & drop functionality
+  - Image transformation tools
+  - Position/rotation controls
+- Date stamp functionality
 
 ### 6. Action Buttons
-- Consistent button sizing (200px width)
-- Modern styling with hover effects
-- "Print to PDF" button with enhanced visibility
-- "Upload Photos" button matching main action button styles
+- Consistent styling (200px width)
+- Modern design with hover effects
+- Primary actions:
+  - Print to PDF
+  - Upload Photos
+  - Save Report
+  - Reset Form
 
 ### 7. Print Optimization
+- Clean print layout
 - Proper page breaks
-- Hidden controls in print view
-- Maintained styling for alternating location backgrounds
-- Footer positioning
-- Optimized image layouts
+- Hidden UI controls in print
+- Maintained styling for key elements
+- Optimized image placement
 
-## Recent Updates
-
-### Button Enhancements
-- Standardized button width to 200px
-- Increased padding and font size for better visibility
-- Added hover effects with shadow and transform
-- Matched "Upload Photos" and "Print to PDF" button styles
-
-### Image Management Improvements
-- Redesigned image delete button:
-  - Positioned in top-right corner
-  - Red circular background
-  - White cross icon
-  - Hover effect with scale animation
-  - Improved touch target size (40px)
-
-### Location Section Updates
-- Increased vertical spacing between location items
-- Enhanced visual separation of items
-- Improved overall readability
-
-### UI/UX Improvements
-- Consistent button styling across the form
-- Better visual hierarchy
-- Enhanced interactive elements
-- Improved spacing and alignment
-
-### Header Adjustments
-- Reduced logo height to 40px
-- Increased shape image height to 160px
-- Adjusted spacing and alignment
-
-### Location Section Improvements
-- Increased font size for "Location:" label to 18px
-- Added alternating background colors (#f8f8f8 and #ffffff)
-- Improved hover effects with light purple background
-- Fixed location dropdown population in image upload section
-
-### Proof of Play Enhancements
-- Increased "Proof of Play:" label size to 18px
-- Improved spacing and alignment
-- Enhanced image preview container styling
-
-### Print View Optimizations
-- Ensured alternating backgrounds show in print
-- Maintained label sizes and positioning
-- Hidden action buttons and controls
-- Proper footer placement
-
-## JavaScript Features
-- Dynamic location list management
-- Image upload and preview
-- Location selection for images
-- Signature upload with transformation controls
-- Print and email functionality
-- Form reset capability
-
-## CSS Organization
-- Modular styling with clear sections
-- Responsive design with mobile breakpoints
-- Print-specific styles
-- Modern UI elements with hover effects
-- Consistent color scheme
+## User Interface Features
+- Responsive design
+- Modern button styling
+- Interactive hover effects
+- Clear visual hierarchy
+- Consistent spacing
+- Touch-friendly interface
+- Error handling and feedback
 
 ## Color Scheme
 - Primary Purple: #6a1b9a
 - Light Purple: #faf5ff
-- Alternate Row: #f8f8f8
+- Background Alt: #f8f8f8
 - Borders: #e0e0e0
-- Text: #333
+- Text: #333333
+- Accent Red: #dc3545 (delete buttons)
 
-## Future Maintenance Notes
-1. Location changes require updating both the list and dropdown selectors
-2. Print styles are critical for proper report generation
-3. Image handling includes automatic size detection
-4. All interactive elements are hidden in print view
-5. Form maintains state until manual reset
+## Development Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/[username]/proof-of-play-report.git
+   ```
+2. Open `index.html` in a modern web browser
+3. No build process required - pure HTML/CSS/JS
 
-## Known Behaviors
-1. Location items require commit action to appear in dropdowns
-2. Images are categorized as large/small based on dimensions
-3. Signature transformation is available until acceptance
-4. Print view automatically adjusts layout for optimal page breaks
+## Deployment Process
+1. Push changes to GitHub:
+   ```bash
+   git add .
+   git commit -m "your commit message"
+   git push origin master
+   ```
+2. Netlify automatically deploys updates
+3. Check deployment status on Netlify dashboard
 
-This documentation will help maintain consistency in future updates and provide quick reference for the project's structure and features. 
+## Browser Support
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+- Modern mobile browsers
+
+## Maintenance Notes
+1. Location changes require committing to update dropdowns
+2. Image uploads are processed client-side
+3. Print layout automatically adjusts
+4. Form state persists until manual reset
+5. All UI controls are hidden in print view
+
+## Future Enhancements
+- [ ] Offline support
+- [ ] Local storage backup
+- [ ] Multi-language support
+- [ ] Dark mode theme
+- [ ] Enhanced mobile optimization
+
+## Contributing
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+For support, please open an issue in the GitHub repository or contact the maintainer.
+
+---
+Last Updated: 2024 
