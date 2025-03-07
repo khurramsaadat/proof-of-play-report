@@ -20,14 +20,14 @@ A web-based form for creating and managing Proof of Play reports, featuring a re
 - Responsive design for mobile views
 
 ### 2. Form Fields
-- Reference Number (PM1046-2025.01)
-- Client Information
+- Reference Number (Default PM1046-2025.01)
+- Client Information (Default: Philip Morris Management Services Middle East Ltd)
 - Contact Person (Default: Noor Sumaiya)
-- Position
+- Position (Default: Commercial Planning Administrator Lead)
 - Date (Auto-populated with current date)
 
 ### 3. Location Management
-- Pre-populated list of locations
+- Pre-populated list of locations with increased vertical spacing
 - Alternating background colors for better readability
 - Numbering format: 01, 02, 03, etc.
 - Add/Remove location functionality
@@ -35,18 +35,28 @@ A web-based form for creating and managing Proof of Play reports, featuring a re
 - Note section with date for special locations
 
 ### 4. Proof of Play Section
-- Image upload functionality
+- Image upload functionality with modern UI
 - Location selection for each image
 - Support for multiple images
 - Automatic sizing (small/large) based on image dimensions
 - Responsive image preview
+- Enhanced image management:
+  - Red circular delete button in top-right corner
+  - Improved image removal UX
+  - Clear visual feedback for delete actions
 
 ### 5. Service Engineer Section
 - Engineer details (Name: Hazem Shbair)
 - Signature upload with transformation controls
 - Date field
 
-### 6. Print Optimization
+### 6. Action Buttons
+- Consistent button sizing (200px width)
+- Modern styling with hover effects
+- "Print to PDF" button with enhanced visibility
+- "Upload Photos" button matching main action button styles
+
+### 7. Print Optimization
 - Proper page breaks
 - Hidden controls in print view
 - Maintained styling for alternating location backgrounds
@@ -54,6 +64,31 @@ A web-based form for creating and managing Proof of Play reports, featuring a re
 - Optimized image layouts
 
 ## Recent Updates
+
+### Button Enhancements
+- Standardized button width to 200px
+- Increased padding and font size for better visibility
+- Added hover effects with shadow and transform
+- Matched "Upload Photos" and "Print to PDF" button styles
+
+### Image Management Improvements
+- Redesigned image delete button:
+  - Positioned in top-right corner
+  - Red circular background
+  - White cross icon
+  - Hover effect with scale animation
+  - Improved touch target size (40px)
+
+### Location Section Updates
+- Increased vertical spacing between location items
+- Enhanced visual separation of items
+- Improved overall readability
+
+### UI/UX Improvements
+- Consistent button styling across the form
+- Better visual hierarchy
+- Enhanced interactive elements
+- Improved spacing and alignment
 
 ### Header Adjustments
 - Reduced logo height to 40px
