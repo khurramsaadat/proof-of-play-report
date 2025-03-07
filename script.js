@@ -11,13 +11,69 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add styles for better button hover effects
     const style = document.createElement('style');
     style.textContent = `
-        .action-btn {
+        .image-upload-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .proof-section {
+            margin-top: 500px;
+        }
+
+        .location-input-wrapper {
+            margin-bottom: 8px;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .remove-image-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            // font-weight: bold;
+            padding: 0;
+            line-height: 1;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+        }
+
+        .remove-image-btn:hover {
+            background-color: #c82333;
+            transform: scale(1.1);
+        }
+
+        .action-btn, .upload-btn {
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            padding: 12px 24px;
+            font-size: 16px;
+            width: 200px;
+            box-sizing: border-box;
         }
         
-        .action-btn:hover {
+        .print-btn, .upload-btn {
+            padding: 15px 30px !important;
+            font-size: 18px !important;
+            width: 200px !important;
+        }
+        
+        .action-btn:hover, .upload-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -573,8 +629,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
             <div class="action-buttons">
-                <button class="action-btn print-btn" onclick="printReport()">Print</button>
-                <button class="action-btn email-btn" onclick="emailReport()">Email</button>
+                <button class="action-btn print-btn" onclick="printReport()">Print to PDF</button>
             </div>
         `;
 

@@ -640,16 +640,17 @@ footer {
 /* Action buttons container */
 .action-buttons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     margin: 60px 0;
 }
 
 .action-btn {
-    padding: 8px 16px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .save-btn {
@@ -660,6 +661,8 @@ footer {
 .print-btn {
     background: #2196F3;
     color: white;
+    padding: 14px 28px;
+    font-size: 18px;
 }
 
 .share-btn {
