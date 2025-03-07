@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proof of Play Report Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <img src="logo.png" alt="Logo" class="header-logo">
+                <img src="shape.png" alt="Shape" class="header-photo">
+            </div>
+        </header>
+
+        <input type="text" class="report-title" value="PROOF OF PLAY REPORT – JAN 2025">
+
+        <form id="proofOfPlayForm">
+            <div class="ref-group">
+                <span class="ref-label">Reference No:</span>
+                <input type="text" id="refNo" class="ref-number" value="PM1046-2025.01">
+            </div>
+
+            <div class="merged-input-group">
+                <span class="merged-label">Client:</span>
+                <input type="text" class="merged-value" value="Philip Morris Management Services Middle East Ltd">
+            </div>
+
+            <div class="merged-input-group">
+                <span class="merged-label">Contact Person:</span>
+                <input type="text" id="contactPerson" class="merged-value" value="Noor Sumaiya">
+            </div>
+
+            <div class="merged-input-group">
+                <span class="merged-label">Position:</span>
+                <input type="text" class="merged-value" value="Commercial Planning Administrator Lead">
+            </div>
+
+            <div class="merged-input-group">
+                <span class="merged-label">Date:</span>
+                <input type="date" id="date" class="merged-value date-input">
+            </div>
+
+            <div class="location-cell">
+                <div class="location-list" id="locationList"></div>
+            </div>
+
+            <div class="proof-section">
+                <div class="merged-label">Proof of Play:</div>
+                <div class="proof-cell">
+                    <div class="image-upload-container">
+                        <input type="file" id="imageUpload" class="file-input" accept="image/*" multiple>
+                        <label for="imageUpload" class="upload-btn">
+                            Upload Photos
+                        </label>
+                        <div id="imagePreview" class="image-preview"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="action-buttons">
+            <button class="action-btn save-btn" onclick="saveReport()">Save</button>
+            <button class="action-btn print-btn" onclick="printReport()">Print</button>
+            <button class="action-btn email-btn" onclick="emailReport()">Email</button>
+        </div>
+
+        <footer>
+            <img src="footer.png" alt="Footer" class="footer-image">
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

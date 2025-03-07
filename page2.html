@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proof of Play Report - Page 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">CONNECTIV</div>
+            <div class="purple-shape"></div>
+        </div>
+
+        <input type="text" class="report-title" value="PROOF OF PLAY REPORT – JAN 2025">
+
+        <div class="image-upload-container">
+            <input type="file" id="imageUpload1" class="file-input" accept="image/*">
+            <button class="upload-btn" onclick="document.getElementById('imageUpload1').click()">
+                Upload Photo 1
+            </button>
+            <div id="imagePreview1" class="image-preview"></div>
+        </div>
+
+        <div class="image-upload-container">
+            <input type="file" id="imageUpload2" class="file-input" accept="image/*">
+            <button class="upload-btn" onclick="document.getElementById('imageUpload2').click()">
+                Upload Photo 2
+            </button>
+            <div id="imagePreview2" class="image-preview"></div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="action-btn save-btn" onclick="saveReport()">Save</button>
+            <button class="action-btn print-btn" onclick="printReport()">Print</button>
+            <button class="action-btn share-btn" onclick="shareReport()">Share</button>
+        </div>
+
+        <footer>
+            <!-- Same footer as index.html -->
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
